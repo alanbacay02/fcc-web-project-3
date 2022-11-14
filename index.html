@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Python Documentation</title>
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- FONT API LINK -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+          <li><a class="nav-link" href="#What_is_Python?">What is Python?</a></li>
+          <li><a class="nav-link" href="#Why_use_Python?">Why use Python?</a></li>
+          <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+          <li><a class="nav-link" href="#Variables">Variables</a></li>
+          <li><a class="nav-link" href="#Declaring_Variables">Declaring Variables</a></li>
+          <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+          <li><a class="nav-link" href="#if...else_Statement">if...else Statement</a></li>
+          <li><a class="nav-link" href="#elif_Statement">elif Statement</a></li>
+          <li><a class="nav-link" href="#while_Loop_Statement">while Loop Statement</a></li>
+          <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+      </nav>
+      <section class="main-section" id="What_is_Python?">
+        <header>What is Python?</header>
+        <p>Python is a high-level programming language often used to build websites and software, automate tasks, and conduct data analysis. Python is also a general-purpose language, meaning it can be used to create a variety of different programs and isn't specialized for any specific problem.</p>
+        <p>Python is popular for a number of reasons. These are some of which that makes Python so versatile and easy to use for coders.</p>
+        <ul>
+          <li>It has simple syntax that <span class="span-bold">mimics natural language</span>.</li>
+          <li>It's <span class="span-bold">versatile</span>. Python can be used for many different tasks.</li>
+          <li>It's <span class="span-bold">beginner friendly</span>, making it popular for entry level coders.</li>
+          <li>It's <span class="span-bold">open source</span>, making it free to use and distribute.</li>
+          <li>It's archive of modules and libraries is <span class="span-bold">vast and growing</span>.</li>
+          <li>It has a <span class="span-bold">large and growing community</span>.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Why_use_Python?">
+        <header>Why use Python?</header>
+        <p>Python is not only used in fields like web-testing, data extraction, artificial intelligence and data science researches, database management, and cybersecurity, it is also used by many famous companies such as Google, Spotify, Youtube, Facebook, and even NASA.</p>
+      </section>
+      <section class="main-section" id="Hello_World">
+        <header>Hello World</header>
+        <p>Get started in Python by writing your first "Hello World" Python code:</p>
+        <code>
+          print('Hello World!')
+        </code>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>A variable is like a box in the computer's memory where you can store a single value. You can name a variable anything as long as it obeys the following three rules:</p>
+        <ol>
+          <li>It can be only one word.</li>
+          <li>It can use only letters, numbers, and the underscore(_) chracter.</li>
+          <li>It can't begine with a number.</li>
+        </ol>
+        <p>Example of valid variables:</p>
+        <code>
+          bacon<br />
+          baconEggs<br />
+          bacon_eggs
+        </code>
+      </section>
+      <section class="main-section" id="Declaring_Variables">
+        <header>Declaring Variables</header>
+        <p>Python has no command for declaring variables. A variable is created the moment you first assign a value to it.</p>
+        <p>You can declare a variable by simply assigning a value to it.</p>
+        <code>
+          x = 30<br />
+          y = 21<br />
+          z = 102
+        </code>
+      </section>
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <p>Data types are the classification or categorization of data items. It represents the kind of value that tells what operations can be performed on a particular data. Since everything is an object in Python programming, data types are actually classses and variables are instances (object) of these classes.</p>
+        <p>In Python there are 6 data types:</p>
+        <ul>
+          <li><span class="span-bold">Numeric</span>. Integer, Complex Number or Float.</li>
+          <li><span class="span-bold">Dictionary</span>. Collection of Key and Value pairs.</li>
+          <li><span class="span-bold">Boolean</span>. True and False.</li>
+          <li><span class="span-bold">Set</span>. Unordered collection of items.</li>
+          <li><span class="span-bold">Sequence Type</span>. String, List, or Tuple.</li> 
+        </ul>
+      </section>
+      <section class="main-section" id="if...else_Statement">
+        <header>if...else Statement</header>
+        <p>The if...elese statement evaluates the test expression and will execute the set of code inside  the "if" block only when the test condition is true. If the condition is false, the set of code will not be executed.</p>
+        <code>
+          if (condition == true):<br />
+          <span class="code-indent">Block of code</span><br />
+          else:<br />
+          <span class="code-indent">Block of code</span>
+        </code>
+        <p>Here if the condition is true, the statement inside the "if" block will be executed. If false, the condition inside the "else" block will be executed.</p>
+      </section>
+      <section class="main-section" id="elif_Statement">
+        <header>elif Statement</header>
+        <p>In Python we have one more conditional statement called "elif" statements. "elif" statement is used to check multiple conditions only if the given condition is false. It is similar to an "if-else" statement, the only difference is that in "else" we will not check the condition but in "elif" we will check the condition.</p>
+        <code>
+          if (condition1 == true):<br />
+          <span class="code-indent">Block of code</span><br />
+          elif (condition2 == true):<br />
+          <span class="code-indent">Block of code</span><br />
+          else:<br />
+          <span class="code-indent">Block of code</span><br />
+        </code>
+        <p>Here the block of code in "elif" will only be executed if the condition in "if" is false. If both "if" and "elif" are false, then the block of code in "else" will be executed.</p>
+        <p>Example using elif Statement:</p>
+        <code>
+          num = 10<br />
+          if (num == 0):<br />
+            <span class="code-indent">print("Number is zero")</span><br />
+          elif (num > 5):<br />
+          <span class="code-indent">print("Number is greater than 5")</span><br />
+          else:<br />
+          <span class="code-indent">print("Number is lesser than 5")</span>
+        </code>
+        <p>For a declared variable 'num' with a value of '10', the output of this code will be 'Number is greater than 5'. In this example our declared variable has a value not equal to 0, therefore the outcome of "if" will be false.</p>
+        <p>As the outcome of our "elif" statement is true, because the value of our variable is greater than 5, the statement inside "elif" will be executed. You can experiment with this code more and change the output by changing the value of 'num'.</p>
+      </section>
+      <section class="main-section" id="while_Loop_Statement">
+        <header>while Loop Statement</header>
+        <p>Python while Loop is used to execute a block of statements repeatedly until a given condition is satisfied. And when the condition becomes false, the line immediately after the loop in the program is executed.</p>
+        <code>
+          while (condition == true):<br />
+          <span class="code-indent">block of code</span><br />
+        </code>
+        <p>Example using while Loop Statement:</p>
+        <code>
+          count = 0<br />
+          while (count < 10):<br />
+          <span class="code-indent">count = count + 1</span><br />
+          <span class="code-indent">print(count)</span>
+        </code>
+        <p>The output of this program will count from 1 to 10. For a declared variable 'count' with a value of 0, the condition for the while loop is not satisfied as 'count' is less than 10.</p>
+        <p>While 'count' is still less than 10, the block of code within the while loop will increment 'count' by 1 and output the value of count. This will keep looping until 'count' reaches a value of 10 and the while loop condition is satisfied.</p>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+          <ul>
+            <li>You can learn more about Python by reading the <a rel="noopener" href="https://docs.python.org/3/" target="_blank">documentation</a>.</li>
+          </ul>
+      </section>
+    </main>
+  </body>
+</html>
